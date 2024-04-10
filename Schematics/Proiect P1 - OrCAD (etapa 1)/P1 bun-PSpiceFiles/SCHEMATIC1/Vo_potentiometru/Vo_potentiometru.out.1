@@ -1,0 +1,65 @@
+
+**** 11/01/23 17:56:40 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Vo_potentiometru"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-PSpiceFiles\SCHEMATIC1\Vo_potentiom
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Vo_potentiometru.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM S 0 1 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1 BUN
+R_R5         N03301 N02918 5k
+Q_Q8         N01322 N03301 N02918 QBC846B 
+Q_Q9         N01152 N01228 N02918 QBC846B 
+Q_Q10         N01152 N01322 N01228 QBC846B 
+R_R6         N01284 N01152  10k TC=0,0 
+R_R7         N04251 N01152  1k TC=0,0 
+R_R8         N04200 N01152  10k TC=0,0 
+R_R9         0 N04129  1k TC=0,0 
+Q_Q13         N01322 N06633 N04129 QBC846B 
+Q_Q14         N04237 N06603 N04129 QBC846B 
+Q_Q15         N04200 N04200 N04237 QBC846B 
+Q_Q16         N04251 N04200 N01322 QBC846B 
+V_V1         N01152 0 36Vdc
+D_D2         0 N01284 BZX84-C5V6 
+R_R12         N01284 N06633  1k TC=0,0 
+R_R13         N06603 N11001  1k TC=0,0 
+R_R16         N11973 N02918  2k TC=0,0 
+X_R14         N11977 N11001 N11542 POT PARAMS: SET={S} VALUE=2k
+R_R10         N11542 0 2k
+R_R18         N11977 N11973  820 TC=0,0 
+R_R19         N12396 N02918  330 TC=0,0 
+R_R20         N12400 N12396  330 TC=0,0 
+R_R21         0 N12400  100 TC=0,0 
+.PARAM  s=0.5
+
+ERROR(ORPSIM-15089): Can not re-define S. S is either a system defined variable or has already been defined
+
+**** RESUMING Vo_potentiometru.cir ****
+.END
+

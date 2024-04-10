@@ -1,0 +1,24 @@
+** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+** Creating circuit file "sim3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C2V7.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/SMLS14BET.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/MJD31CG.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC856B.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

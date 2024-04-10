@@ -1,0 +1,81 @@
+
+**** 11/08/23 17:32:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/SMLS14BET.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/MJD31CG.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC856B.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1 BUN
+R_R5         N03301 N15135 0.94
+Q_Q8         TEMP N03301 N05464 QBC846B 
+Q_Q10         N01152 TEMP N01228 QBC846B 
+R_R6         N01284 N01152  10k TC=0,0 
+R_R7         N04251 N01152  1k TC=0,0 
+R_R8         N04200 N01152  1k TC=0,0 
+R_R9         0 N04129  1k TC=0,0 
+Q_Q13         N04204 N06633 N04129 QBC846B 
+Q_Q14         TEMP N06603 N04129 QBC846B 
+V_V1         N01152 0 36Vdc
+D_D2         0 N01284 BZX84-C5V6 
+R_R12         N01284 N06633  1k TC=0,0 
+R_R13         N06603 N11029  1k TC=0,0 
+R_R16         N11973 N05464  2k TC=0,0 
+X_R14         N11542 N11029 N11977 POT PARAMS: SET=1 VALUE=2k
+R_R10         N11542 0 2k
+R_R18         N11977 N11973  820 TC=0,0 
+Q_Q17         N04204 N04204 N04251 QBC856B 
+Q_Q18         TEMP N04204 N04200 QBC856B 
+R_R21         0 N19842  1 TC=0,0 
+R_R22         N15135 N05464  0.47 TC=0,0 
+Q_Q19         TEMP N17142 0 QBC846B 
+R_R24         N17142 N01284  6.8k TC=0,0 
+R_R23         N171581 N17142  470 TC=0,0 
+R_R25         N175481 N171581  100 TC=0,0 
+R_R26         0 N175481  150 TC=0,0 
+Q_Q20         N01152 N01228 N03301 QMJD31C 
+C_C1         0 N05464  1n  TC=0,0 
+R_R27         N19893 N05464  0 TC=0,0 
+-----------------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+R_R28         N19842 N19893  0 TC=0,0 
+-----------------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+D_D3         N21332 0 SMLS14BET 
+R_R30         N21003 N01152  680 TC=0,0 
+R_R31         N21156 N21003  680 TC=0,0 
+R_R32         N21365 N21156  680 TC=0,0 
+R_R33         N21332 N21365  680 TC=0,0 
+.PARAM  set=0.5
+
+**** RESUMING sim3.cir ****
+.END
+
