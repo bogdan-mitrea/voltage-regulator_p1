@@ -1,0 +1,96 @@
+Wed Dec 06 17:33:19 2023				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Wed Dec 06 17:33:19 2023
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : P1 BUN.brd                                    )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Wed Dec 06 17:33:19 2023                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Wed Dec 06 17:33:19 2023				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/P1 BUN.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'YES'
+Update shape/flash symbols             = 'NO'
+Update symbol padstacks                = 'YES'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_17.2/share/local/pcb/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/allegrolib/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_17.2/share/local/pcb/padstacks 
+           C:/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/allegrolib/symbols 
+
+
+------ Symbol Refresh Messages ------
+
+'DPACK'  symbol refreshed successfully.
+'SMD0805'  symbol refreshed successfully.
+'SMR2512'  symbol refreshed successfully.
+'SMR0805'  symbol refreshed successfully.
+'TS53YL'  symbol refreshed successfully.
+
+'TO236AA'  symbol starting to refresh:
+     ERROR(SPMHNI-270): 1 pins found in the symbol in the physical design, but missing from library symbol. They are:
+            3
+
+
+
+------ Pad Stack Refresh Messages ------
+
+'SMD50_36'  pad stack refreshed successfully.
+'SM_LLB_PAD35_1'  pad stack refreshed successfully.
+'SM_LLB_PAD1'  pad stack refreshed successfully.
+'SM_LLB_PAD36_1'  pad stack refreshed successfully.
+'S130'  pad stack refreshed successfully.
+'3X1_6_DPAK_1_3'  pad stack refreshed successfully.
+'6_2X5_8_DPACK_2'  pad stack refreshed successfully.
+'SM_LIB_PAD88'  pad stack refreshed successfully.
+'R130_200'  pad stack refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 5 out 6
+    Design updated.
+

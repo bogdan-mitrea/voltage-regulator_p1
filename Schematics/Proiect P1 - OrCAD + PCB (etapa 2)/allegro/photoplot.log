@@ -1,0 +1,313 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : P1 BUN.brd                                    )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sat Dec 09 22:03:42 2023                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          INCHES
+    FILM-SIZE             2400000 1600000
+    FORMAT                2.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01600                                  DARK 
+  CIRCLE     0.02800                                  DARK 
+  CIRCLE     0.04000                                  DARK 
+  SQUARE     0.05000                     0.000 NO     DARK 
+  SQUARE     0.05118                     0.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.03600       0.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.03600      90.000 NO     DARK 
+  RECTANGLE  0.05118     x 0.07874      90.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800       0.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800      90.000 NO     DARK 
+  RECTANGLE  0.08000     x 0.12000       0.000 NO     DARK 
+  RECTANGLE  0.08000     x 0.12000      90.000 NO     DARK 
+  RECTANGLE  0.11811     x 0.06299       0.000 NO     DARK 
+  RECTANGLE  0.24409     x 0.22835       0.000 NO     DARK 
+
+     TOP created.
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01600                                  DARK 
+  CIRCLE     0.02800                                  DARK 
+
+     BOTTOM created.
+
+
+================================================================
+     PROCESSING FILM < BO >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/BO.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00010                                  DARK 
+
+     BO created.
+
+
+================================================================
+     PROCESSING FILM < SMTOP >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/SMTOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.03800                                  DARK 
+  CIRCLE     0.08000                                  DARK 
+  SQUARE     0.06000                     0.000 NO     DARK 
+  SQUARE     0.06118                     0.000 NO     DARK 
+  RECTANGLE  0.06000     x 0.04600       0.000 NO     DARK 
+  RECTANGLE  0.06000     x 0.04600      90.000 NO     DARK 
+  RECTANGLE  0.06118     x 0.08874      90.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800       0.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800      90.000 NO     DARK 
+  RECTANGLE  0.08600     x 0.05800       0.000 NO     DARK 
+  RECTANGLE  0.08600     x 0.05800      90.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.13000       0.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.13000      90.000 NO     DARK 
+  RECTANGLE  0.12811     x 0.07299       0.000 NO     DARK 
+  RECTANGLE  0.25409     x 0.23835       0.000 NO     DARK 
+
+     SMTOP created.
+
+
+================================================================
+     PROCESSING FILM < SMBOT >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/SMBOT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.03800                                  DARK 
+
+     SMBOT created.
+
+
+================================================================
+     PROCESSING FILM < SSTOP >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/SSTOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00020                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.00787                                  DARK 
+
+     SSTOP created.
+
+
+================================================================
+     PROCESSING FILM < SPTOP >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/SPTOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.04000                                  DARK 
+  SQUARE     0.04500                     0.000 NO     DARK 
+  SQUARE     0.04606                     0.000 NO     DARK 
+  RECTANGLE  0.04500     x 0.03240       0.000 NO     DARK 
+  RECTANGLE  0.04500     x 0.03240      90.000 NO     DARK 
+  RECTANGLE  0.04606     x 0.07086      90.000 NO     DARK 
+  RECTANGLE  0.06840     x 0.04320       0.000 NO     DARK 
+  RECTANGLE  0.06840     x 0.04320      90.000 NO     DARK 
+  RECTANGLE  0.07200     x 0.10800       0.000 NO     DARK 
+  RECTANGLE  0.07200     x 0.10800      90.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800       0.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800      90.000 NO     DARK 
+  RECTANGLE  0.10630     x 0.05669       0.000 NO     DARK 
+  RECTANGLE  0.21968     x 0.20551       0.000 NO     DARK 
+
+     SPTOP created.
+
+
+================================================================
+     PROCESSING FILM < FAB >
+     TO FILE < C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/allegro/FAB.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.10
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: text composed 0 width line found at (449.50 -887.50)
+           ... using undefined line width of 0.10
+
+    WARNING: 0 width line found at (0.00 -950.00)
+           ... using undefined line width of 0.10
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.10
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.10
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00010                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+
+     FAB created with warnings
+
+
+------------------------------------------------------
+ SUMMARY:
+        TOP created.
+        BOTTOM created.
+        BO created.
+        SMTOP created.
+        SMBOT created.
+        SSTOP created.
+        SPTOP created.
+        FAB created with warnings
+
+ ARTWORK had warnings

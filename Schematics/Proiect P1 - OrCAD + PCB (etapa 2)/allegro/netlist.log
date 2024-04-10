@@ -1,0 +1,13 @@
+{ Using PSTWRITER 17.2.0 d001Dec-06-2023 at 02:04:57 }
+
+#1 WARNING(ORCAP-36050): No pins are present in 1. Ignoring this component in netlist.
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... C:\USERS\BOGDAN\DESKTOP\ETTI\AN 3 - SEM 1\P1\allegro/pstchip.dat
+
+Loading... C:\USERS\BOGDAN\DESKTOP\ETTI\AN 3 - SEM 1\P1\allegro/pstchip.dat
+
+Loading... C:\USERS\BOGDAN\DESKTOP\ETTI\AN 3 - SEM 1\P1\allegro/pstxprt.dat
+
+Loading... C:\USERS\BOGDAN\DESKTOP\ETTI\AN 3 - SEM 1\P1\allegro/pstxnet.dat
+packaging the design view...

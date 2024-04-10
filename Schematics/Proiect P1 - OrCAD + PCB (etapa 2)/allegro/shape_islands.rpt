@@ -1,0 +1,18 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : P1 BUN.brd                                    )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sat Dec 09 14:22:28 2023                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 1
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+	Point on shape: (1239.13 1182.02)  Net: 0
