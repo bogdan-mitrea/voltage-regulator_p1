@@ -1,0 +1,176 @@
+
+**** 11/08/23 16:22:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-potentiometru"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-PSpiceFiles\SCHEMATIC1\potentiometru.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "potentiometru.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/MJD31CG.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC856B.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM SET 0 1 0.001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1 BUN
+R_R5         N03301 N15135 1
+Q_Q8         TEMP N03301 N05464 QBC846B 
+Q_Q10         N01152 TEMP N01228 QBC846B 
+R_R6         N01284 N01152  10k TC=0,0 
+R_R7         N04251 N01152  1k TC=0,0 
+R_R8         N04200 N01152  1k TC=0,0 
+R_R9         0 N04129  1k TC=0,0 
+Q_Q13         N04204 N06633 N04129 QBC846B 
+Q_Q14         TEMP N06603 N04129 QBC846B 
+V_V1         N01152 0 36Vdc
+D_D2         0 N01284 BZX84-C5V6 
+R_R12         N01284 N06633  1k TC=0,0 
+R_R13         N06603 N11029  1k TC=0,0 
+R_R16         N11973 N05464  2k TC=0,0 
+X_R14         N11542 N11029 N11977 POT PARAMS: SET={SET} VALUE=2k
+R_R10         N11542 0 2k
+R_R18         N11977 N11973  820 TC=0,0 
+Q_Q17         N04204 N04204 N04251 QBC856B 
+Q_Q18         TEMP N04204 N04200 QBC856B 
+R_R21         0 N19842  100 TC=0,0 
+R_R22         N15135 N05464  0.47 TC=0,0 
+Q_Q19         TEMP N17142 0 QBC846B 
+R_R24         N17142 N01284  6.8k TC=0,0 
+R_R23         N171581 N17142  470 TC=0,0 
+R_R25         N175481 N171581  100 TC=0,0 
+R_R26         0 N175481  150 TC=0,0 
+Q_Q20         N01152 N01228 N03301 QMJD31C 
+C_C1         0 N05464  1n  TC=0,0 
+R_R27         N19893 N05464  330 TC=0,0 
+R_R28         N19842 N19893  330 TC=0,0 
+.PARAM  set=0.5
+
+**** RESUMING potentiometru.cir ****
+.END
+
+**** 11/08/23 16:22:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-potentiometru"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-PSpiceFiles\SCHEMATIC1\potentiometru.s
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C5V6      
+          IS    2.666500E-18 
+           N     .82284      
+         ISR    1.266600E-09 
+         IKF     .01176      
+          BV    5.7078       
+         IBV     .35715      
+          RS     .51617      
+          TT   78.483000E-09 
+         CJO  137.100000E-12 
+          VJ     .72637      
+           M     .34532      
+
+
+**** 11/08/23 16:22:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-potentiometru"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-PSpiceFiles\SCHEMATIC1\potentiometru.s
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QMJD31C         QBC856B         QBC846B         
+               NPN             PNP             NPN             
+       LEVEL    1               1               1            
+          IS   90.620200E-12   20.140000E-15   18.220000E-15 
+          EG    1.05                                         
+          BF    3.418700E+03  315.3           324.4          
+          NF    1.17603          .9974           .9932       
+         VAF   29.2393         39.15           82            
+         IKF     .108267         .079            .109        
+         ISE  537.193000E-09    6.578000E-15  289.400000E-18 
+          NE    4               1.45            1.4          
+          BR  367.353           8.68            8.29         
+          NR    5                .9952           .9931       
+         VAR    1.631           9.5            17.9          
+         IKR    1.15207          .09             .09         
+         ISC    1.157540E-09   16.330000E-15    9.982000E-12 
+          NC    1.49179         1.15            1.763        
+         ISS    0               0               0            
+          RB   22.4853         10              10            
+         RBM    1.000000E-12    5.000000E-06    5            
+         IRB    2.209370E-03    5.000000E-06    5.000000E-06 
+          RE  100.000000E-06     .663            .649        
+          RC     .138633         .718            .7014       
+         CJE  373.889000E-12   11.350000E-12   12.440000E-12 
+         VJE     .67672          .7071           .7579       
+         MJE     .575056         .3808           .3656       
+         CJC  352.510000E-12    6.395000E-12    3.347000E-12 
+         VJC     .884306         .4951           .5463       
+         MJC     .473486         .44             .391        
+        XCJC     .1              .6288           .6193       
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .5              .333            .333        
+          FC     .8              .9059           .979        
+          TF   10.000000E-09  654.600000E-12  490.800000E-12 
+         XTF    3.4926          5.387           9.51         
+         VTF   12.6615          6.245           2.927        
+         ITF     .052395         .2108           .3131       
+          TR    3.298030E-06   55.000000E-09   90.000000E-09 
+         XTB  999.997000E-15                                 
+         XTI    1.000000E-12                                 
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.42         
+           D     .87             .52             .87         
+
+
+
+          JOB CONCLUDED
+
+**** 11/08/23 16:22:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-potentiometru"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-PSpiceFiles\SCHEMATIC1\potentiometru.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .16
+

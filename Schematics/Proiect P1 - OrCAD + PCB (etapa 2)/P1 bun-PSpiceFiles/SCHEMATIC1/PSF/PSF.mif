@@ -1,0 +1,5 @@
+ lib=C:\Cadence\SPB_17.2\tools\capture\library\pspice\SMLS14BET.lib, offset=135, size=131
+ lib=C:\Cadence\SPB_17.2\tools\capture\library\pspice\BC856B.lib, offset=475, size=781
+ lib=C:\Cadence\SPB_17.2\tools\capture\library\pspice\BZX84C5V6.lib, offset=468, size=190
+ lib=C:\Cadence\SPB_17.2\tools\capture\library\pspice\BC846B.lib, offset=476, size=771
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\breakout.lib, offset=9201, size=133

@@ -1,0 +1,244 @@
+
+**** 12/01/23 15:56:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C2V7.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/SMLS14BET.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/MJD31CG.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC856B.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1 BUN
+Q_Q8         TEMP N03301 N05464 QBC846B 
+Q_Q6         N01152 TEMP N35529 QBC846B 
+R_R5         N68675 N01152  2k TC=0,0 
+R_R6         N04251 N01152  1k TC=0,0 
+R_R7         N04200 N01152  1k TC=0,0 
+R_R10         0 N04129  1k TC=0,0 
+Q_Q3         N04204 N38194 N04129 QBC846B 
+Q_Q4         TEMP N37897 N04129 QBC846B 
+V_V1         N01152 0 38Vdc
+D_D2         0 N06633 BZX84-C5V6 
+R_R18         N109591 N05464  1.5k TC=0,0 
+X_R21         N109831 N37526 N109830 POT PARAMS: SET=1 VALUE=2k
+R_R19         N119671 N109591  220 TC=0,0 
+Q_Q1         N04204 N04204 N04251 QBC856B 
+Q_Q2         TEMP N04204 N04200 QBC856B 
+R_R32         N26191 N22997  150 TC=0,0 
+R_R17         N21864 N05464  0.47 TC=0,0 
+R_R29         N26106 N05464  150 TC=0,0 
+R_R30         N22993 N26106  150 TC=0,0 
+D_D1         N21332 0 SMLS14BET 
+R_R2         N21156 N21003  680 TC=0,0 
+R_R3         N21365 N21156  680 TC=0,0 
+R_R4         N21332 N21365  680 TC=0,0 
+R_R16         N21868 N21864  0.47 TC=0,0 
+R_R15         N03301 N21868  0.47 TC=0,0 
+R_R22         N223441 N109831  1k TC=0,0 
+R_R31         N22997 N22993  150 TC=0,0 
+D_D3         N25728 0 SMLS14BET 
+R_R25         N25552 N05464  220 TC=0,0 
+R_R26         N25724 N25552  220 TC=0,0 
+R_R27         N25842 N25724  220 TC=0,0 
+R_R28         N25728 N25842  150 TC=0,0 
+R_R33         N26235 N26191  150 TC=0,0 
+R_R34         0 N26235  10 TC=0,0 
+Q_Q7         N01152 N35529 N03301 QMJD31C 
+R_R1         N21003 N01152  680 TC=0,0 
+R_R9         N37897 N37526  510 TC=0,0 
+R_R8         N06633 N38194  510 TC=0,0 
+R_R11         N58949 N06633  2k TC=0,0 
+R_R13         N58806 N55818  470 TC=0,0 
+Q_Q5         TEMP N55818 0 QBC846B 
+R_R14         0 N58806  82 TC=0,0 
+R_R12         N55818 N58949  3.3k TC=0,0 
+R_R20         N109830 N119671  51 TC=0,0 
+R_R23         N628941 N223441  330 TC=0,0 
+R_R24         0 N628941  51 TC=0,0 
+R_R35         N68852 N68675  2k TC=0,0 
+R_R36         N06633 N68852  680 TC=0,0 
+.PARAM  set=0.5
+
+**** RESUMING sim3.cir ****
+.END
+
+**** 12/01/23 15:56:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               SMLS14BET       BZX84-C5V6      
+          IS  405.890000E-24    2.666500E-18 
+           N    2.4475           .82284      
+         ISR                    1.266600E-09 
+         IKF     .98529          .01176      
+          BV                    5.7078       
+         IBV                     .35715      
+          RS   15.483            .51617      
+          TT                   78.483000E-09 
+         CJO   38.500000E-12  137.100000E-12 
+          VJ     .87273          .72637      
+           M     .20189          .34532      
+          EG    2.638                        
+
+
+**** 12/01/23 15:56:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QMJD31C         QBC856B         QBC846B         
+               NPN             PNP             NPN             
+       LEVEL    1               1               1            
+          IS   90.620200E-12   20.140000E-15   18.220000E-15 
+          EG    1.05                                         
+          BF    3.418700E+03  315.3           324.4          
+          NF    1.17603          .9974           .9932       
+         VAF   29.2393         39.15           82            
+         IKF     .108267         .079            .109        
+         ISE  537.193000E-09    6.578000E-15  289.400000E-18 
+          NE    4               1.45            1.4          
+          BR  367.353           8.68            8.29         
+          NR    5                .9952           .9931       
+         VAR    1.631           9.5            17.9          
+         IKR    1.15207          .09             .09         
+         ISC    1.157540E-09   16.330000E-15    9.982000E-12 
+          NC    1.49179         1.15            1.763        
+         ISS    0               0               0            
+          RB   22.4853         10              10            
+         RBM    1.000000E-12    5.000000E-06    5            
+         IRB    2.209370E-03    5.000000E-06    5.000000E-06 
+          RE  100.000000E-06     .663            .649        
+          RC     .138633         .718            .7014       
+         CJE  373.889000E-12   11.350000E-12   12.440000E-12 
+         VJE     .67672          .7071           .7579       
+         MJE     .575056         .3808           .3656       
+         CJC  352.510000E-12    6.395000E-12    3.347000E-12 
+         VJC     .884306         .4951           .5463       
+         MJC     .473486         .44             .391        
+        XCJC     .1              .6288           .6193       
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .5              .333            .333        
+          FC     .8              .9059           .979        
+          TF   10.000000E-09  654.600000E-12  490.800000E-12 
+         XTF    3.4926          5.387           9.51         
+         VTF   12.6615          6.245           2.927        
+         ITF     .052395         .2108           .3131       
+          TR    3.298030E-06   55.000000E-09   90.000000E-09 
+         XTB  999.997000E-15                                 
+         XTI    1.000000E-12                                 
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.42         
+           D     .87             .52             .87         
+
+
+**** 12/01/23 15:56:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( TEMP)   22.2410  (N01152)   38.0000 (N03301)   21.0230 (N04129)    4.9485     
+
+(N04200)   35.5180 (N04204)   34.8630 (N04251)   35.5260 (N05464)   20.9480     
+
+(N06633)    5.6050 (N21003)   29.2600 (N21156)   20.5210 (N21332)    3.0418     
+
+(N21365)   11.7810 (N21864)   20.9730 (N21868)   20.9980 (N22993)   12.6790     
+
+(N22997)    8.5444 (N25552)   16.1320 (N25724)   11.3160 (N25728)    3.2158     
+
+(N25842)    6.4994 (N26106)   16.8130 (N26191)    4.4100 (N26235)     .2756     
+
+(N35529)   21.6470 (N37526)    5.6083 (N37897)    5.6050 (N38194)    5.6020     
+
+(N55818)     .5287 (N58806)     .0785 (N58949)    3.6894 (N68675)   24.1560     
+
+(N68852)   10.3120 (N109591)   14.8460                   (N109830)   13.7440    
+
+(N109831)    5.6083                   (N119671)   13.9510                       
+
+(N223441)    1.5473                   (N628941)     .2071                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.825E-02
+
+    TOTAL POWER DISSIPATION   2.97E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/01/23 15:56:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim3.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

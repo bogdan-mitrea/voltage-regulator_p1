@@ -1,0 +1,203 @@
+
+**** 11/01/23 16:21:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim1"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 50 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1 BUN
+R_R5         N03301 N01330 5k
+Q_Q8         N01322 N03301 N01330 QBC846B 
+Q_Q9         N01152 N01228 N01330 QBC846B 
+Q_Q10         N01152 N01322 N01228 QBC846B 
+R_R6         N01284 N01152  5.9k TC=0,0 
+R_R7         N04251 N01152  1k TC=0,0 
+R_R8         N04200 N01152  10k TC=0,0 
+R_R9         0 N04129  1k TC=0,0 
+Q_Q13         N01322 N06633 N04129 QBC846B 
+Q_Q14         N04237 N06603 N04129 QBC846B 
+Q_Q15         N04200 N04200 N04237 QBC846B 
+Q_Q16         N04251 N04200 N01322 QBC846B 
+V_V1         N01152 0 36Vdc
+R_R10         N05136 0 5k
+R_R11         0 N01330  760 TC=0,0 
+D_D2         0 N01284 BZX84-C5V6 
+R_R12         N01284 N06633  1k TC=0,0 
+R_R13         N06603 N08350  1k TC=0,0 
+X_R14         N01330 N08350 N05136 POT PARAMS: SET=2 VALUE=10K
+
+**** RESUMING sim1.cir ****
+.END
+
+**** 11/01/23 16:21:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim1"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C5V6      
+          IS    2.666500E-18 
+           N     .82284      
+         ISR    1.266600E-09 
+         IKF     .01176      
+          BV    5.7078       
+         IBV     .35715      
+          RS     .51617      
+          TT   78.483000E-09 
+         CJO  137.100000E-12 
+          VJ     .72637      
+           M     .34532      
+
+
+**** 11/01/23 16:21:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim1"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         
+               NPN             
+       LEVEL    1            
+          IS   18.220000E-15 
+          BF  324.4          
+          NF     .9932       
+         VAF   82            
+         IKF     .109        
+         ISE  289.400000E-18 
+          NE    1.4          
+          BR    8.29         
+          NR     .9931       
+         VAR   17.9          
+         IKR     .09         
+         ISC    9.982000E-12 
+          NC    1.763        
+         ISS    0            
+          RB   10            
+         RBM    5            
+         IRB    5.000000E-06 
+          RE     .649        
+          RC     .7014       
+         CJE   12.440000E-12 
+         VJE     .7579       
+         MJE     .3656       
+         CJC    3.347000E-12 
+         VJC     .5463       
+         MJC     .391        
+        XCJC     .6193       
+         CJS    0            
+         VJS     .75         
+         MJS     .333        
+          FC     .979        
+          TF  490.800000E-12 
+         XTF    9.51         
+         VTF    2.927        
+         ITF     .3131       
+          TR   90.000000E-09 
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+ERROR(ORPSIM-16551): Floating point computation failed during Device/Model Load. Possible solutions: 1)Ensure that all device parameters are in valid range. 2)Try using .options LIMIT
+
+INTERNAL ERROR -- Invalid Number in device D_D2, Divide
+
+ABORTING SIMULATION
+**** 11/01/23 16:21:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim1"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-pspicefiles\schematic1\sim1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          15
+  External (NCNODS)                 =          15
+  Total (NUMNOD)                    =          37
+
+Total device count (NUMEL)          =          20
+  Diodes (D)                        =           1
+  BJTs (Q)                          =           7
+  Resistors (R)                     =          11
+  Voltage Sources (V)               =           1
+
+Number of subcircuits (X)           =           1
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          38
+  Initial no. elements (NTTAR)      =         152
+  No. elements w/ fillin (NTTBR)    =         196
+  No. fillins (IFILL)               =          44
+  No. overflows (NTTOV)             =          69
+  No. LU operations (IOPS)          =        1629
+  Percent sparsity (PERSPA)         =      86.427
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           2
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =         .03
+  Matrix solution                   =         .02               5
+  Readin                            =         .02
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =         .02            2991
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .13
+  Total job time (using Solver 1)   =         .50
+

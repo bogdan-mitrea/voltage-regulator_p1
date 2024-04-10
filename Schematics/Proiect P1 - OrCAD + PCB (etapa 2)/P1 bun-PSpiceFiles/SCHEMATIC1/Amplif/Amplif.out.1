@@ -1,0 +1,72 @@
+
+**** 11/08/23 14:32:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Amplif"  [ c:\users\bogdan\desktop\etti\an 3 - sem 1\p1\p1 bun-PSpiceFiles\SCHEMATIC1\Amplif.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Amplif.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC856B.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BZX84C5V6.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/capture/library/pspice/BC846B.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Bogdan\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 9 0 100Meg
+----------$
+ERROR(ORPSIM-16103): Invalid value
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1 BUN
+R_R5         N03301 N15135 1
+Q_Q8         N01322 N03301 N05464 QBC846B 
+Q_Q9         N01152 N01228 N03301 QBC846B 
+Q_Q10         N01152 N01322 N01228 QBC846B 
+R_R6         N01284 N01152  10k TC=0,0 
+R_R7         N04251 N01152  1k TC=0,0 
+R_R8         N04200 N01152  1k TC=0,0 
+R_R9         0 N04129  1k TC=0,0 
+Q_Q13         N04204 N06633 N04129 QBC846B 
+Q_Q14         N01322 N06603 N04129 QBC846B 
+V_V1         N01152 0 36Vdc
+D_D2         0 N01284 BZX84-C5V6 
+R_R12         N01284 N06633  1k TC=0,0 
+R_R13         N06603 N11001  1k TC=0,0 
+R_R16         N11973 N05464  2k TC=0,0 
+X_R14         N11977 N11001 N11542 POT PARAMS: SET=1 VALUE=2k
+R_R10         N11542 0 2k
+R_R18         N11977 N11973  820 TC=0,0 
+Q_Q17         N04204 N04204 N04251 QBC856B 
+Q_Q18         N01322 N04204 N04200 QBC856B 
+R_R19         N15015 N05464  330 TC=0,0 
+R_R21         0 N15041  100 TC=0,0 
+R_R20         N15041 N15015  330 TC=0,0 
+R_R22         N15135 N05464  0.47 TC=0,0 
+Q_Q19         N01322 N16244 0 QBC846B 
+R_R23         0 N16244  20k TC=0,0 
+R_R24         N01284 N16244  10k TC=0,0 
+C_C1         0 N11001  1T  TC=0,0 
+C_C2         N01284 N16763  1T  TC=0,0 
+V_V2         N16763 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING Amplif.cir ****
+.END
+
