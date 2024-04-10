@@ -1,0 +1,37 @@
+\t (00:00:03) allegro 17.2 S025 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Tue Jan 16 11:38:51 2024
+\t (00:00:03)         Host=DESKTOP-1KLQG9E User=Bogdan Pid=15176 CPUs=8
+\t (00:00:03) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:03) Starting new design...
+\i (00:00:04) trapsize 703
+\i (00:00:04) trapsize 720
+\i (00:00:04) trapsize 1179
+\i (00:00:05) generaledit 
+\i (00:00:07) open 
+\i (00:00:10) fillin "P1 BUN.brd"
+\t (00:00:10) Opening existing design...
+\t (00:00:10) Grids are drawn 20.00, 20.00 apart for enhanced viewability.
+\i (00:00:10) trapsize 2343
+\d (00:00:10) Design opened: C:/Users/Bogdan/Desktop/ETTI/An 3 - Sem 1/P1/P1_2023_432D_Mitrea_Bogdan_SERS_N19_OrCAD/Layout/P1 BUN.brd
+\i (00:00:10) generaledit 
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 548.61 1178.67
+\t (00:00:11) Grids are drawn 10.00, 10.00 apart for enhanced viewability.
+\i (00:00:11) trapsize 1172
+\i (00:00:13) prepopup 1003.21 1349.73
+\i (00:00:16) pop dyn_option_select 'Modify design padstack@:@All instances' 
+\i (00:00:16) mod padstack 
+\i (00:01:00) generaledit 
+\i (00:01:05) pick grid 1410.95 1384.88
+\t (00:01:05) last pick:  1410.00 1385.00
+\i (00:01:05) prepopup 1410.95 1384.88
+\i (00:01:07) pop dyn_option_select 'Modify design padstack@:@All instances' 
+\i (00:01:07) mod padstack 
+\i (00:01:35) generaledit 
+\i (00:01:37) pick grid 2071.76 1012.30
+\t (00:01:37) last pick:  2070.00 1010.00
+\i (05:01:18) exit 
+\t (05:01:19)     Journal end - Tue Jan 16 16:40:06 2024
